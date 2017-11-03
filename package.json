@@ -1,0 +1,20 @@
+{
+  "name": "hugo-init",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-p brunch:dev hugo:dev",
+    "brunch:dev": "brunch w",
+    "hugo:dev": "hugo server -D",
+    "prod": "run-s clean-static brunch:build hugo:build",
+    "brunch:build": "brunch b -p",
+    "hugo:build": "hugo",
+    "clean-static": "rm -rf static/"
+  },
+  "devDependencies": {
+    "brunch": "^2.10.12",
+    "npm-run-all": "^4.1.1",
+    "sass-brunch": "^2.10.4",
+    "uglify-js-brunch": "^2.10.0"
+  }
+}
