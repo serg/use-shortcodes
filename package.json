@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "run-p brunch:dev hugo:dev",
-    "brunch:dev": "brunch w",
-    "hugo:dev": "hugo server -D",
-    "prod": "run-s clean-static brunch:build hugo:build",
-    "brunch:build": "brunch b -p",
-    "hugo:build": "hugo",
-    "clean-static": "rm -rf static/"
+    "dev": "npm-run-all clean-static -p dev:brunch dev:hugo",
+    "dev:brunch": "brunch w",
+    "dev:hugo": "hugo server -D",
+    "prod": "run-s clean-static prod:brunch prod:hugo",
+    "prod:brunch": "brunch b -p",
+    "prod:hugo": "hugo",
+    "clean-static": "rm -rf static && mkdir static"
   },
   "devDependencies": {
     "brunch": "^2.10.12",
