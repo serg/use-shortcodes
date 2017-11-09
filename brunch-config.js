@@ -14,7 +14,7 @@ module.exports = {
   },
   modules: {
     nameCleaner: function(path) {
-      return path.replace(/^src\/scripts\//, '')
+      return path.replace(/^src\/scripts\/(?:libs\/)?/, '')
                  .replace(/-\d+(?:\.\d+)+(?:\.min)/, '');
     }
   }

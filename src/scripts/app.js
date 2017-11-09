@@ -1,7 +1,7 @@
 "use strict";
 
-require('libs/modernizr');
-var $ = require('libs/jquery');
+require('modernizr');
+var $ = require('jquery');
 
 var App = {
   init: function() {
