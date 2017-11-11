@@ -29,5 +29,8 @@
     {{- block "scripts" . -}}
       {{- partial "scripts.html" . -}}
     {{- end -}}
+    {{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") | and .Site.GoogleAnalytics -}}
+      {{- template "_internal/google_analytics_async.html" . -}}
+    {{- end -}}
   </body>
 </html>
