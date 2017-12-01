@@ -3,7 +3,3 @@ languageCode = "en-us"
 title = "Home page website"
 disableKinds = ["RSS", "taxonomyTerm"]
 googleAnalytics = "UA-XXXXX-Y"    # Google Analytics: change UA-XXXXX-Y to be your site's ID.
-
-# Custom params
-[params]
-  env = "development"   # Change to "production" when your website ready for indexing by search engines and for Google Analytics

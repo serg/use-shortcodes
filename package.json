@@ -1,19 +1,15 @@
 {
   "name": "hugo-init",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "dev": "npm-run-all clean-static -p dev:brunch dev:hugo",
-    "dev:brunch": "brunch w",
-    "dev:hugo": "hugo server -D",
-    "prod": "run-s clean-static prod:brunch prod:hugo",
-    "prod:brunch": "brunch b -p",
-    "prod:hugo": "hugo",
-    "clean-static": "rm -rf static && mkdir static"
+    "dev": "npm run clean-public && brunch w -s",
+    "prod": "npm run clean-public && brunch b -p",
+    "clean-public": "rm -rf public/"
   },
   "devDependencies": {
+    "auto-reload-brunch": "^2.7.1",
     "brunch": "^2.10.12",
-    "npm-run-all": "^4.1.1",
+    "hugo-brunch": "^1.0.1",
     "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "^2.10.0"
   }

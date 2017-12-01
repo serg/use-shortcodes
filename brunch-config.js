@@ -1,7 +1,6 @@
 module.exports = {
   paths: {
-    public: 'static',
-    watched: ['src']
+    watched: ['src', 'site']
   },
   files: {
     javascripts: {
@@ -17,5 +16,11 @@ module.exports = {
       return path.replace(/^src\/scripts\/(?:libs\/)?/, '')
                  .replace(/-\d+(?:\.\d+)+(?:\.min)/, '');
     }
+  },
+  conventions: {
+    ignored: [/\/_(?!default|index)/, /vendor\/(node|j?ruby-.+|bundle)\//]
+  },
+  plugins: {
+    hugo: { sourceFolder: 'site' }
   }
 };
