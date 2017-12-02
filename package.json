@@ -4,12 +4,13 @@
   "scripts": {
     "dev": "npm run clean-public && brunch w -s",
     "prod": "npm run clean-public && brunch b -p",
-    "clean-public": "rm -rf public/"
+    "clean-public": "rimraf public/*"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
     "brunch": "^2.10.12",
     "hugo-brunch": "^1.1.0",
+    "rimraf": "^2.6.2",
     "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "^2.10.0"
   }
