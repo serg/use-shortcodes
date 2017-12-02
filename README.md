@@ -1,7 +1,7 @@
 # hugo-init
 A starter kit for creating a homepage static website with [Hugo framework](http://gohugo.io). You can use it as a starting point for development different kinds of page templates, which are allowed in the Hugo (e.g. for a static blog). Please see the Hugo documentation for more info. For managing the assets (`scss`, `javascript`, `images`, etc) this template is using a [Brunch](http://brunch.io) building tool. It's fast tool and simple to configure and expand.
 
-Feel free to expand the abilities of this template to fit your requirements. Also please note by using this project you understand the implications and guarantees of the [MIT license](https://github.com/sfexample/hugo-init/blob/master/LICENSE).
+Feel free to expand the abilities of this template to fit your requirements. Also please note by using this project you understand the implications and guarantees of the [MIT license](https://github.com/serg/hugo-init/blob/master/LICENSE).
 ## Requirements
 Before start you already need to have these applications on aboard:
 - [Node 6.x+](https://nodejs.org/en/download) (LTS version) and [npm](https://www.npmjs.com/get-npm) (shipped with node installation)
