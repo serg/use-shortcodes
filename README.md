@@ -30,3 +30,5 @@ Your markdown file (in `content/` folder) needs to be not a draft for including 
 draft: false
 ```
 All website pages contain the `noindex` and `nofollow` values in the meta tags when website was generated in [development mode](#development-mode). Also the Google Analytics is absent on a page in this mode. When you will be ready share your website with a world please run the build of application in [production mode](#production-mode).
+## License
+MIT © [Sergey Furtak](https://sergfurtak.com)
