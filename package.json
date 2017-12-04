@@ -2,8 +2,9 @@
   "name": "hugo-init",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npm run clean-public && brunch w -s",
-    "prod": "npm run clean-public && brunch b -p",
+    "start": "brunch w -s",
+    "build": "npm run clean-public && brunch b -p",
+    "preview": "npm run clean-public && brunch b -e development,production",
     "clean-public": "rimraf public/*"
   },
   "devDependencies": {
