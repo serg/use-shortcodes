@@ -8,17 +8,16 @@ Also please note by using this project you understand the implications and guara
 Before start you already need to have these applications on aboard:
 - [Node 6.x+](https://nodejs.org/en/download) (LTS version) and [npm](https://www.npmjs.com/get-npm) (shipped with node installation)
 ## Installation
-Install all dependencies:
+Install all dependencies by running this command inside a project folder:
 ```
-$ cd hugo-init
 $ npm install
 ```
 ## Development mode
 Build assets with Brunch and Hugo, start a development server:
 ```
-$ npm run start
+$ npm start
 ```
-The application will be available at the http://localhost:3333 link in browser.
+The application will be available at the [`http://localhost:3333`](http://localhost:3333) link in your browser.
 All changes in the `src/` and `site/` folders will be synced and displayed in browser automatically.
 ## Production mode
 To build the application for production use this command:
