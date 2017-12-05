@@ -3,3 +3,4 @@ languageCode = "en-us"
 title = "Home page website"
 disableKinds = ["RSS", "taxonomyTerm"]
 googleAnalytics = "UA-XXXXX-Y"    # Google Analytics: change UA-XXXXX-Y to be your site's ID.
+enableRobotsTXT = true
