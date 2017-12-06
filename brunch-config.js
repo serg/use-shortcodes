@@ -5,15 +5,15 @@ module.exports = {
   files: {
     javascripts: {
       joinTo: {
-        'app.js': /^src\/scripts\/(?!libs)/,
-        'vendor.js': /^src\/scripts\/libs/
+        'app.js': /^src(?!.*libs).*/,
+        'vendor.js': [/^node_modules/, /^src(?:.*libs).*/]
       }
     },
     stylesheets: { joinTo: 'app.css' }
   },
   modules: {
     nameCleaner: function(path) {
-      return path.replace(/^src\/scripts\/(?:libs\/)?/, '')
+      return path.replace(/^src.*\/(?:libs\/)?/, '')
                  .replace(/-\d+(?:\.\d+)+(?:\.min)/, '');
     }
   },
