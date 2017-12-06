@@ -1,6 +1,9 @@
 {
   "name": "hugo-init",
   "version": "1.0.0",
+  "author": "Sergey Furtak",
+  "license": "MIT",
+  "repository": "serg/hugo-init",
   "scripts": {
     "start": "brunch w -s",
     "build": "npm run clean-public && brunch b -p",
