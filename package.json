@@ -6,13 +6,15 @@
   "repository": "serg/hugo-init",
   "scripts": {
     "start": "brunch w -s",
-    "build": "npm run clean-public && brunch b -p",
-    "preview": "npm run clean-public && brunch b -e development,production",
-    "clean-public": "rimraf public/*"
+    "build": "npm run clean-public && brunch b -p && npm run minify-html",
+    "preview": "npm run clean-public && brunch b -e development,production && npm run minify-html",
+    "clean-public": "rimraf public/*",
+    "minify-html": "html-minifier --input-dir public --output-dir public --file-ext html --collapse-whitespace"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
     "brunch": "^2.10.12",
+    "html-minifier": "^3.5.7",
     "hugo-brunch": "^1.1.0",
     "rimraf": "^2.6.2",
     "sass-brunch": "^2.10.4",
