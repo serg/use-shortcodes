@@ -1,6 +1,6 @@
 # hugo-init
 A starter kit for creating a homepage static website with [Hugo framework](https://gohugo.io). You can use it as a starting point for development different kinds of page templates, which are allowed in the Hugo (e.g. for a static blog). Please see the [Hugo documentation](https://gohugo.io/documentation/) for more info.
-For managing the assets (`scss`, `javascript`, `images`, etc) this template is using a [Brunch](http://brunch.io) building tool. It's fast tool, simple to configure and expand.
+For managing the assets (`sass/scss`, `javascript`, etc) this template is using a [Brunch](http://brunch.io) building tool. It's fast tool, simple to configure and expand.
 
 Feel free to expand the abilities of this template to fit your requirements.
 Also please note by using this project you understand the implications and guarantees of the [MIT license](https://github.com/serg/hugo-init/blob/master/LICENSE).
@@ -45,5 +45,15 @@ draft: false
 ```
 All website pages contain the `noindex` and `nofollow` values in the meta tags when website was generated in the development or preview mode. Also the Google Analytics is absent on a page and the `robots.txt` file has an option for prevention of indexing by search engines.
 When you will be ready to share your website with a world please run the build of application in the production mode.
+## Deployment of a website
+You can move the generated website from the `public/` folder to on any type of a hosting provider for the static files. One of an option for the simplest and fastest deploying your site is using the [Netlify](https://www.netlify.com) service. Besides the Netlify provide a great service with a [lot of features](https://www.netlify.com/features/) for free and your website will never slow down the speed of loading for a webpage when deliver it to your users. The instructions for the deploying to Netlify below.
+- Push your clone to your own GitHub repository.
+- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
+
+Now Netlify will build and deploy your site whenever you push to git.
+
+You can also click this button:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/serg/hugo-init/tree/sass)
 ## License
 MIT © [Sergey Furtak](https://sergfurtak.com)
