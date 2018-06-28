@@ -52,8 +52,5 @@ You can move the generated website from the `public/` folder to on any type of a
 
 Now Netlify will build and deploy your site whenever you push to git.
 
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/serg/hugo-init/tree/sass)
 ## License
 MIT © [Sergey Furtak](https://sergfurtak.com)
