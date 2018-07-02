@@ -1,0 +1,46 @@
+.pure-expand {
+  margin-bottom: 1rem; //16px
+
+  &-checkbox {
+    display: none;
+
+    &:checked {
+      + .pure-expand-header:before {
+        transform: rotate(90deg);
+      }
+      ~ .pure-expand-content {
+        height: auto;
+        padding-top: .625rem; //10px
+        padding-bottom: .625rem; //10px
+        opacity: 1;
+      }
+    }
+  }
+
+  &-header {
+    position: relative;
+    padding-left: 1.25rem;
+    cursor: pointer;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      width: 0;
+      height: 0;
+      margin-top: -5px;
+      border: medium solid $main-text-color;
+      border-width: 5px 0 5px 5px;
+      border-color: transparent transparent transparent $main-text-color;
+      transition: transform .2s ease-out;
+    }
+  }
+
+  &-content {
+    height: 0;
+    padding: 0 .625rem; //10px
+    line-height: 1.5;
+    opacity: 0;
+    transition: padding-top .2s ease-out, padding-bottom .2s ease-out, opacity 50ms ease-in-out;
+  }
+}

@@ -2,9 +2,13 @@
 title: Main page
 date: 2017-11-01T18:28:28+02:00
 draft: true
-description: The home page template for creating website by using the Hugo framework
+description: "[Useful shortcodes] Expands"
 ---
 
-# Home page content
+# [Useful shortcodes] Expands
+This is a set of the experiments with different implementation for the expand components that can be used like a Hugo shortcode inside a page content.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi maiores nam facere, reprehenderit vel voluptas tenetur fuga reiciendis, culpa ut quibusdam voluptate possimus, ipsam? Officiis modi facere ducimus, dolores repellendus autem obcaecati architecto facilis fugiat eveniet ex dicta non voluptate iusto, magnam vero. Ipsa est corrupti ratione eum, iste pariatur.
+## The couple of the expands created with pure CSS approach only
+{{<pure-expand>}}Repellat unde aperiam natus consectetur corporis perferendis eius ex magni inventore enim deleniti architecto facilis nihil{{</pure-expand>}}
+{{<pure-expand title="Expand with the custom title">}}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quod, tempore ipsam, quidem dolorum et doloremque id aliquam fugiat autem architecto eaque numquam quae facere. Iure laborum iste eum magnam obcaecati facilis reprehenderit, incidunt dicta sit expedita! Repellat unde aperiam natus consectetur corporis perferendis eius ex magni inventore enim deleniti architecto facilis nihil possimus consequatur ea aliquam quod omnis cumque voluptatibus facere libero necessitatibus esse nostrum, beatae. Explicabo eum possimus illo, incidunt dolorem soluta et architecto repellat modi, qui quo aut delectus, ducimus nesciunt velit perspiciatis praesentium. Perspiciatis non quis dolore rem voluptatem adipisci vero, tempore recusandae odit praesentium cum quo, obcaecati voluptas sequi laudantium hic impedit suscipit alias at optio. Impedit unde sunt modi et, labore corporis ea dolor ad eveniet deleniti porro ipsum culpa molestias expedita sequi id, illo dolorum perferendis est ratione assumenda provident quis corrupti dolores nesciunt. Nihil reiciendis vero at laudantium, cupiditate, blanditiis delectus quod optio ipsum ab nemo architecto ipsa sint, totam porro corporis nobis aspernatur non veniam maiores, soluta a nam vel. Non nisi atque, ea quasi error saepe inventore vero id a aspernatur quas, voluptates mollitia qui ipsam soluta omnis nulla, repellendus, pariatur ipsa. Dolore amet incidunt rem itaque ad nulla maxime.{{</pure-expand>}}
+{{%pure-expand title="This expand has the markdown syntax"%}}**Nihil** reiciendis vero at laudantium, cupiditate, blanditiis delectus quod optio ipsum ab nemo architecto ipsa sint{{%/pure-expand%}}

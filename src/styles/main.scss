@@ -1,9 +1,6 @@
 @import "normalize";
+@import "variables";
+@import "base";
+@import "layout";
 
-$main-bg-color: #ddd;
-$main-text-color: #111;
-
-body {
-  color: $main-text-color;
-  background: $main-bg-color;
-}
+@import "modules/pure-expand/styles";

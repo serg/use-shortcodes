@@ -1,0 +1,10 @@
+{{- $expandIdCounter := .Page.Scratch.Get "idCounter" | default 1 -}}
+{{- $expandId := print "expand-" $expandIdCounter -}}
+{{- add $expandIdCounter 1 | .Page.Scratch.Set "idCounter" -}}
+<div class="pure-expand">
+  <input id="{{$expandId}}" class="pure-expand-checkbox" type="checkbox" />
+  <label for="{{$expandId}}" class="pure-expand-header">{{ .Get "title" | default "Expand me" }}</label>
+  {{- with .Inner -}}
+  <div class="pure-expand-content">{{- . -}}</div>
+  {{- end -}}
+</div>
