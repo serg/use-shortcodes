@@ -1,0 +1,42 @@
+.expand {
+  margin-bottom: 1rem; //16px
+
+  &-header {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.25rem;
+    cursor: pointer;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      width: 0;
+      height: 0;
+      margin-top: -5px;
+      border: medium solid $main-text-color;
+      border-width: 5px 0 5px 5px;
+      border-color: transparent transparent transparent $main-text-color;
+      transition: transform .2s ease-out;
+    }
+  }
+
+  &-content {
+    padding: .625rem; //10px
+    line-height: 1.5;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+  }
+
+  &.is-collapsed {
+    .expand-content {
+      display: none;
+    }
+  }
+
+  &.is-expanded {
+    .expand-header:before {
+      transform: rotate(90deg);
+    }
+  }
+}

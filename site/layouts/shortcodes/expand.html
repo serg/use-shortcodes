@@ -1,0 +1,9 @@
+{{- $expandIdCounter := .Page.Scratch.Get "idCounter" | default 1 -}}
+{{- $expandId := print "expand-" $expandIdCounter -}}
+{{- add $expandIdCounter 1 | .Page.Scratch.Set "idCounter" -}}
+<div class="expand is-collapsed">
+  <div class="expand-header">{{ .Get "title" | default "Expand me" }}</div>
+  {{- with .Inner -}}
+  <div class="expand-content">{{- . -}}</div>
+  {{- end -}}
+</div>
