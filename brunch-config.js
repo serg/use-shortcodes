@@ -21,6 +21,11 @@ module.exports = {
     ignored: [/\/_(?!default|index)/, /vendor\/(node|j?ruby-.+|bundle)\//]
   },
   plugins: {
-    hugo: { sourceFolder: 'site' }
+    hugo: { sourceFolder: 'site' },
+    postcss: {
+      processors: [
+        require('autoprefixer')(['last 2 versions', '> 1%'])
+      ]
+    }
   }
 };
