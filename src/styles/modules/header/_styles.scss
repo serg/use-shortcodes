@@ -1,0 +1,20 @@
+.header {
+  background: $blue;
+  padding: 1.25rem 0;
+
+  &-link {
+    display: inline-block;
+    color: $main-bg-color;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity .15s ease-in;
+  }
+
+  &-link:hover {
+    opacity: .7;
+  }
+}
