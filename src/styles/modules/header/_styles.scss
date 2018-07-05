@@ -1,5 +1,6 @@
 .header {
   background: $blue;
+  background: linear-gradient(135deg, $blue 35%, $light-blue 100%);
   padding: 1.25rem 0;
 
   &-link {
