@@ -1,6 +1,6 @@
 baseURL: https://example.com
 languageCode: en-us
-title: Home page website
+title: Use Shortcodes
 disableKinds: [RSS, taxonomy, taxonomyTerm]    # For an easy start, see more at: https://gohugo.io/content-management/taxonomies/#hugo-taxonomy-defaults
 googleAnalytics: UA-XXXXX-Y    # Google Analytics: change UA-XXXXX-Y to be your site's ID.
 enableRobotsTXT: true    # The dynamic creation of robots.txt for prevention of indexing by search engines in the development and preview modes.

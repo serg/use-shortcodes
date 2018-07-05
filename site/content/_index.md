@@ -1,8 +1,7 @@
 ---
-title: Main page
+title: Useful shortcodes for your next Hugo project
 date: 2017-11-01T18:28:28+02:00
-draft: true
-description: "[Useful shortcodes] Expands"
+description: This project includes the set of shortcodes, that could be useful to creating content for website implemented with a Hugo as a static site generator.
 ---
 
 # [Useful shortcodes] Expands

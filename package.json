@@ -1,9 +1,9 @@
 {
-  "name": "hugo-init",
+  "name": "use-shortcodes",
   "version": "1.0.0",
   "author": "Sergey Furtak",
   "license": "MIT",
-  "repository": "serg/hugo-init",
+  "repository": "serg/use-shortcodes",
   "scripts": {
     "start": "brunch w -s",
     "build": "npm run clean-public && brunch b -p && npm run minify-html",
