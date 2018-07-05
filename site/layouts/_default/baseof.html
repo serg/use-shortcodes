@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ with .Title }} - {{ . }}{{ end }}{{ end }}</title>
+    <title>{{block "title" .}}{{with .Title}}{{.}} &bull; {{end}}{{with .Site.Title}}{{.}}{{end}}{{end}}</title>
     <meta name="description" content="{{ .Description }}">
     {{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") -}}
       <meta name="robots" content="index, follow">
