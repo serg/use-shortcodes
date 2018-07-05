@@ -4,3 +4,37 @@
   margin: 0 auto;
   padding: 0 $container-offset;
 }
+
+.header {
+  background: $blue;
+  background: linear-gradient(135deg, $blue 35%, $light-blue 100%);
+  padding: 1.25rem 0;
+
+  &-link {
+    display: inline-block;
+    color: $main-bg-color;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
+
+.content {
+  margin-top: 3rem;
+}
+
+.footer {
+  color: $main-text-color;
+  margin-top: 3rem;
+
+  &-wrap {
+    padding: 1.75rem 0;
+    border-top: 1px solid rgba(0,0,0,0.25);
+  }
+
+  &-author-link {
+    color: $blue;
+  }
+}
