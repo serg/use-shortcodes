@@ -21,6 +21,7 @@
     position: relative;
     display: inline-block;
     padding-left: 1.25rem; //20px
+    box-sizing: border-box;
     font-size: 18px;
     cursor: pointer;
     &:before {
@@ -44,5 +45,26 @@
     line-height: 1.5;
     opacity: 0;
     transition: padding-top .2s ease-out, padding-bottom .2s ease-out, opacity 50ms ease-in-out;
+  }
+}
+
+.pure-expand-green {
+  background: $olive;
+  border: 1px solid $olive;
+  border-radius: 7px;
+
+  .pure-expand-header {
+    width: 100%;
+    padding: 1rem 1rem 1rem 1.25rem;
+    color: $white;
+
+    &:before {
+      border-left-color: $white;
+    }
+  }
+
+  .pure-expand-content {
+    background: $white;
+    border-radius: 0 0 7px 7px;
   }
 }
