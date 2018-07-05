@@ -41,3 +41,24 @@
     }
   }
 }
+
+.expand-green {
+  background: $olive;
+  border: 1px solid $olive;
+  border-radius: 7px;
+
+  .expand-header {
+    width: 100%;
+    padding: 1rem 1rem 1rem 1.25rem;
+    color: $white;
+
+    &:before {
+      border-left-color: $white;
+    }
+  }
+
+  .expand-content {
+    background: $white;
+    border-radius: 0 0 7px 7px;
+  }
+}

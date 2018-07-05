@@ -1,7 +1,9 @@
-$main-bg-color: #fff;
-$main-text-color: #001f3f;
+$white: #fff;
 $blue: #0074d9;
 $light-blue: #7fdbff;
+$olive: #3d9970;
+$main-bg-color: $white;
+$main-text-color: #001f3f;
 
 $title-font: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 $copy-font: $title-font;
