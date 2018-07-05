@@ -1,4 +1,4 @@
-div {
+html, body, header, main, footer, div, a {
   box-sizing: border-box;
 }
 
@@ -11,7 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 h1 {
   font-size: 2.25rem;
@@ -37,4 +36,17 @@ p {
 }
 small {
   font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+  transition: opacity .15s ease-in;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+main {
+  margin-top: 3rem;
 }
