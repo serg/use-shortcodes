@@ -17,7 +17,7 @@ Build assets with Brunch and Hugo, start a development server:
 ```
 $ npm start
 ```
-The application will be available at the [`http://localhost:3333`](http://localhost:3333) link in your browser.
+The application will be available at the [`http://localhost:1313`](http://localhost:1313) link in your browser.
 All changes in the `src/` and `site/` folders will be synced and displayed in browser automatically.
 ## Production mode
 To build the application for production use this command:

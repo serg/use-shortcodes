@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "serg/use-shortcodes",
   "scripts": {
-    "start": "brunch w -s",
+    "start": "brunch w -s -P 1313",
     "build": "npm run clean-public && brunch b -p && npm run minify-html",
     "preview": "npm run clean-public && brunch b -e development,production && npm run minify-html",
     "clean-public": "rimraf public/*",
