@@ -1,4 +1,4 @@
-html, body, header, main, footer, div, a {
+html, body, header, main, footer, div, a, pre {
   box-sizing: border-box;
 }
 
@@ -45,4 +45,9 @@ a {
   &:hover {
     opacity: .7;
   }
+}
+
+pre {
+  padding: .625rem;
+  overflow: auto;
 }
