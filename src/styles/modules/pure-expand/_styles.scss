@@ -44,6 +44,7 @@
     padding: 0 .625rem 0 1.25rem;
     line-height: 1.5;
     opacity: 0;
+    overflow: hidden;
     transition: padding-top .2s ease-out, padding-bottom .2s ease-out, opacity 50ms ease-in-out;
   }
 }
