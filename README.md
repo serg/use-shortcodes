@@ -1,15 +1,18 @@
-# hugo-init
-A starter kit for creating a homepage static website with [Hugo framework](https://gohugo.io). You can use it as a starting point for development different kinds of page templates, which are allowed in the Hugo (e.g. for a static blog). Please see the [Hugo documentation](https://gohugo.io/documentation/) for more info.
-For managing the assets (`sass/scss`, `javascript`, etc) this template is using a [Brunch](http://brunch.io) building tool. It's fast tool, simple to configure and expand.
+# Useful shortcodes
+The set of the implementations for some shortcodes. These shordcodes can be used for managing content on the Hugo website. The main goal of this project is creating useful shortcodes, that will be optimized for working fast.
+This project used the [`hugo-init`](https://github.com/serg/hugo-init) boilerplate, but the shortcode implementations can be migrated on other project templates/build tools without any issues.
 
-Feel free to expand the abilities of this template to fit your requirements.
-Also please note by using this project you understand the implications and guarantees of the [MIT license](https://github.com/serg/hugo-init/blob/master/LICENSE).
+Here is the live demo: https://use-shortcodes.netlify.com/
+
+Please note by using this project you understand the implications and guarantees of the [MIT license](https://github.com/serg/use-shortcodes/blob/master/LICENSE).
 ## Requirements
 Before start you already need to have these applications on aboard:
 - [Node 6.x+](https://nodejs.org/en/download) (LTS version) and [npm](https://www.npmjs.com/get-npm) (shipped with node installation)
 ## Installation
-Install all dependencies by running this command inside a project folder:
+Clone project and install all dependencies by running these commands:
 ```
+$ git clone https://github.com/serg/use-shortcodes.git
+$ cd use-shortcodes
 $ npm install
 ```
 ## Development mode
