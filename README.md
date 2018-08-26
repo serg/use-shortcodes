@@ -2,7 +2,7 @@
 The set of the implementations for some shortcodes. These shordcodes can be used for managing content on the Hugo website. The main goal of this project is creating useful shortcodes, that will be optimized for working fast.
 This project used the [`hugo-init`](https://github.com/serg/hugo-init) boilerplate, but the shortcode implementations can be migrated on other project templates/build tools without any issues.
 
-Here is the live demo: https://use-shortcodes.netlify.com/
+Here is the live demo: https://useshortcodes.netlify.com/
 
 Please note by using this project you understand the implications and guarantees of the [MIT license](https://github.com/serg/use-shortcodes/blob/master/LICENSE).
 ## Requirements
