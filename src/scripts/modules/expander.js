@@ -5,13 +5,11 @@ var Expander = (function() {
     var expands = document.querySelectorAll('.expand');
 
     if (expands.length) {
-      for(var i = 0; i < expands.length; i++) {
-        var expand = expands[i];
-
+      expands.forEach(function(expand) {
         expand.addEventListener('click', clickHandler);
-      }
+      });
     }
-  }
+  };
 
   var clickHandler = function (event) {
     var expand = this;
@@ -27,7 +25,7 @@ var Expander = (function() {
 
       updateExpandHeight(expandContent);
     }
-  }
+  };
 
   var updateExpandHeight = function (expandContent) {
     var isExpanded = expandContent.parentNode.classList.contains('is-expanded');
@@ -40,7 +38,7 @@ var Expander = (function() {
     window.requestAnimationFrame(function() {
       expandContent.style.maxHeight = isExpanded ? expandContentHeight + 'px' : '0px';
     });
-  }
+  };
 
   var transitionEndHandler = function (event) {
     if (event.propertyName === 'max-height') {
@@ -54,8 +52,8 @@ var Expander = (function() {
       expandContent.style.maxHeight = '';
 
       expandContent.removeEventListener('transitionend', transitionEndHandler);
-    };
-  }
+    }
+  };
 
   return {
     initAll: initExpanders
