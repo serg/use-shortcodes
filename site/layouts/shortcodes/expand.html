@@ -1,5 +1,5 @@
 <div class="expand is-collapsed{{with (.Get `class`)}} {{.}}{{end}}">
-  <div class="expand-header">{{ .Get "title" | default "Expand me" }}</div>
+  <div class="expand-header"><span class="expand-header-title">{{ .Get "title" | default "Expand me" }}</span></div>
   {{- with .Inner -}}
   <div class="expand-content">{{- . -}}</div>
   {{- end -}}

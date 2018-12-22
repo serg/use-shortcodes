@@ -6,8 +6,6 @@ var Expander = require('expander');
 
 var App = {
   init: function() {
-    console.log('The app is initialized!');
-
     Expander.initAll();
   }
 };
