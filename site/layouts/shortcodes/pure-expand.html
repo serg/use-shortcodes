@@ -1,3 +1,5 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
 {{- $expandIdCounter := .Page.Scratch.Get "idCounter" | default 1 -}}
 {{- $expandId := print "expand-" $expandIdCounter -}}
 {{- add $expandIdCounter 1 | .Page.Scratch.Set "idCounter" -}}

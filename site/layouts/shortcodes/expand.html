@@ -1,3 +1,5 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
 <div class="expand is-collapsed{{with (.Get `class`)}} {{.}}{{end}}">
   <div class="expand-header"><span class="expand-header-title">{{ .Get "title" | default "Expand me" }}</span></div>
   {{- with .Inner -}}
